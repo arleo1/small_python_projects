@@ -1,0 +1,32 @@
+# The user plays rock, paper, scissors against the computer
+
+import random
+import re
+
+print("Let's play rock, paper, scissors!")
+game=False
+
+while game is not True:
+    list = ["r", "p", "s"]
+    com = random.choice(list)
+    guess = input("Enter r for rock, p for paper, or s for scissors: ").lower()
+
+    if not re.match("[rps]", guess):
+            guess = input("Invalid input. Enter r, p, or, s: ").lower()
+
+    while guess == com:
+        com = random.choice(list)
+        guess = input("Tie! Guess again: ").lower()
+
+    if (guess=="r" and com=="p") or (guess=="p" and com=="s") or (guess=="s" and com=="r"):
+        print("You lost! The computer picked", com)
+    else:
+        print("You won! The computer picked",com)
+
+    exit = input("To play again, press x. Otherwise, hit any other key to exit: ")
+
+    if exit=="x":
+        print("")
+        continue
+    else: 
+        break
