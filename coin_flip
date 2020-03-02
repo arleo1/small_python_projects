@@ -1,0 +1,10 @@
+# The program will generate a random coin flip for the user.
+
+import random
+
+print("This is a coin flip simulator.")
+flip = int(input("Enter how many times to flip the coin: "))
+list=["heads","tails"]
+
+for i in range(flip):
+    print(random.choice(list))
