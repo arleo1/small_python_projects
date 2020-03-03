@@ -1,0 +1,15 @@
+# The program rolls a 6 sided die and returns a number.
+import random
+
+exit = False
+
+while exit!=True:
+    list=[1,2,3,4,5,6]
+    roll = random.choice(list)
+    print(roll)
+    x = input("Press x to roll again or any other key to exit: ")
+    
+    if x != "x":
+        exit=True
+    else:
+        continue
