@@ -1,0 +1,13 @@
+# The program accepts user input and generates a mad lib about the summer.
+print("Welcome to the mad libs generator! This mad lib's theme is summer.")
+
+adj = input("Enter an adjective: ")
+adj2 = input("Enter another adjective: ")
+noun = input("Enter a noun: ")
+noun2 = input("Enter another noun: ")
+animal = input("Enter an animal: ")
+game = input("Enter the name of a game: ")
+
+print("A vacation is when you take a trip to some",adj, "with your",adj2,"family.")
+print("You go to a place near a/an",noun, "or up an",noun2,".")
+print("A good vacation place is one where you can ride",animal, "or play",game,"!")
