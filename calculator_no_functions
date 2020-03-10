@@ -1,0 +1,34 @@
+# simple calculator
+
+print("Press 1 for addition")
+print("Press 2 for subtraction")
+print("Press 3 for multiplication")
+print("Press 4 for division")
+choice = int(input("Make your selection: "))
+
+while choice < 1 or choice > 4:
+   choice = int(input("Not valid, please re-enter: "))
+
+if choice == 1:
+    x = float(input("Enter the first number to be added: "))
+    y = float(input("Enter the second number: "))
+    sum = x + y
+    print("The result is", round(sum, 2))
+
+elif choice == 2:
+    x = float(input("Enter the first number to be subtracted: "))
+    y = float(input("Enter the second number: "))
+    sub = x - y
+    print("The result is", round(sub, 2))
+
+elif choice == 3:
+    x = float(input("Enter the first number to be multiplied: "))
+    y = float(input("Enter the second number: "))
+    mult = x * y
+    print("The result is", round(mult, 2))
+
+elif choice == 4:
+    x = float(input("Enter the first number to be divided: "))
+    y = float(input("Enter the second number: "))
+    div = x / y
+    print("The result is", round(div, 2))
